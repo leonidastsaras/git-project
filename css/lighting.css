@@ -1,0 +1,76 @@
+section.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap:wrap; */
+    gap: 1rem;
+    margin: 2rem 0px;
+}
+
+section.row div.card {
+    border: solid thin #464646;
+    padding: 10px;
+    background-color: #0e0e0e;
+    border-radius: 4px;
+    width: 100%;
+    transition: all 0.5s;
+
+}
+
+section.row div.card:hover {
+    border-color: #ee9b4d;
+}
+
+section.row div.card div.product {
+    width: 100%;
+}
+
+section.row div.card div.product img {
+    width: 100%;
+}
+
+section.row div.card div.data {
+    text-align: center;
+}
+
+section.row div.card div.data p {
+    margin: 10px 0px;
+}
+
+section.row div.card div.data p.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s;
+}
+
+section.row div.card div.data p.product-name:hover {
+    color: #ee9b4d;
+}
+
+section.row div.card div.data p.price span:nth-child(1) {
+    text-decoration: line-through;
+}
+
+section.row div.card div.data p.price span:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    section.row {
+        flex-wrap: wrap;
+    }
+
+    section.row div.card {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.row div.card {
+        width: 100%;
+    }
+}
